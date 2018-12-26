@@ -10,8 +10,9 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>ecommerce</module>
+        <module>ebaycommerce</module>
         <module>generic</module>
+
     </modules>
 <dependencyManagement>
   <dependencies>

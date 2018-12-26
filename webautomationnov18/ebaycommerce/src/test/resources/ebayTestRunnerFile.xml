@@ -13,7 +13,7 @@
     <parameter name="url" value="https://www.ebay.com/"/>
 
 
-<test name = "Ecommerce Home">
+<test name = "Ebaycommerce Home">
     <classes>
 
 
