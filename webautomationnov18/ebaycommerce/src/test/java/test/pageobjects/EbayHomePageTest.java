@@ -29,15 +29,19 @@ public class EbayHomePageTest extends EbayHomePage {
         System.out.println("Ebay Logo Test Passed");
     }
 
-    //@Test
-    //public void untilEndTheSeasonDeals(){
-      //  String
-    //}
+    @Test
+    public void endTheSeasonDealTest(){
+        String seasonDealText = objOfEbayHomePage.endTheSeasonDeal();
+        Assert.assertEquals(seasonDealText, "Up to 70% Off to End the Season");
+        System.out.println("Season Deal Passed");
+    }
 
-    //@Test
-    //public void dailyDeals(){
-      //  String dealsText = objOfEbayHomePage.clickDailyDeals();
-    //}
+    @Test
+    public void dailyDealsTest(){
+
+
+
+    }
 
 
 

@@ -17,7 +17,7 @@ public class EbayHomePage extends BrowserDriver {
     private WebElement searchBox;
 
     @FindBy(how = How.ID, using = "gh-hsi")
-    private WebElement untilEndTheSeasonDeal;
+    private WebElement endTheSeasonDeal;
 
     @FindBy(how = How.ID, using = "gh-p-1")
     private WebElement dailyDeals;
@@ -37,12 +37,17 @@ public class EbayHomePage extends BrowserDriver {
         return true;
     }
 
-    public void untilEndTheSeasonDeal(){
+    public String endTheSeasonDeal(){
+        String seasonDealText = endTheSeasonDeal.getText();
+        return seasonDealText;
+    }
 
-        untilEndTheSeasonDeal.click();
+    public void clickEndTheSeasonDeal(){
+        endTheSeasonDeal.click();
     }
 
     public void clickDailyDeals(){
+
         dailyDeals.click();
     }
 
