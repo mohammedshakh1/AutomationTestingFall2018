@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="AliBaba Automation Test" parallel="false">
+<suite name="AliBaba Automation Test" parallel="false" >
+    <!--parallel="false"-->
 
     <!--<parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>-->
 
     <parameter name="os" value="Mac"/>
     <parameter name="os_version" value="10"/>
-    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="62.0"/>
-    <parameter name="url" value="https://www.ebay.com/"/>
+    <parameter name="url" value="http://automationpractice.com"/>
 
 
-<test name = "Ebaycommerce Home">
+<test name = "Ecommerce Home">
     <classes>
 
 
-        <class name="test.pageobjects.EbayHomePageTest"/>
-        <class name="test.pageobjects.EbayFooterPageTest"/>
-
+       <!-- <class name="test.page.objects.HomePageTest"/>
+        <class name="test.page.objects.ContactUsPageTest"/>-->
+        <class name="test.page.objects.LoginPageTest"/>
 
     </classes>
 
